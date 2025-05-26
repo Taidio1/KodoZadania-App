@@ -1,10 +1,12 @@
 import { createClientComponentClient } from '@supabase/auth-helpers-nextjs'
 import { NextResponse } from 'next/server'
+import { cookies } from 'next/headers'
+import { createRouteHandlerClient } from '@supabase/auth-helpers-nextjs'
 
 export async function POST(request: Request) {
   try {
     const { code, challengeId } = await request.json()
-    const supabase = createClientComponentClient()
+    const supabase = createRouteHandlerClient({ cookies })
 
     // Get the challenge details
     const { data: challenge, error: challengeError } = await supabase

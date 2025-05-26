@@ -25,7 +25,8 @@ export default function Home() {
     <main className="container mx-auto px-4 py-8">
       <div className="flex flex-col items-center justify-center min-h-[60vh] space-y-8">
         <h1 className="text-4xl font-bold text-center">
-          Programming Practice
+        KodoZadania <br />
+        Programming Practice App
         </h1>
       
 

@@ -96,6 +96,23 @@ export default function ChallengePage({ params }: { params: Promise<{ id: string
       })
 
       if (data.success) {
+        // Mark challenge as completed for the user
+        const { data: { user } } = await supabase.auth.getUser()
+        if (user && challenge) {
+          const { error: insertError } = await supabase
+            .from('user_completed_challenges')
+            .insert({
+              user_id: user.id,
+              challenge_id: challenge.id,
+            })
+
+          if (insertError) {
+            console.error('Error marking challenge as completed:', insertError)
+          } else {
+            console.log('Challenge marked as completed')
+          }
+        }
+
         // Optionally show the solution or redirect
         setShowSolution(true)
       }

@@ -25,10 +25,6 @@ export default function DashboardPage() {
     checkSession()
   }, [router, supabase])
 
-  const handleSignOut = async () => {
-    await supabase.auth.signOut()
-    router.push('/')
-  }
 
   if (loading) {
     return (
@@ -41,18 +37,11 @@ export default function DashboardPage() {
   return (
     <main className="container mx-auto px-4 py-8">
       <div className="flex justify-between items-center mb-8">
-        <h1 className="text-3xl font-bold">Dashboard</h1>
-        <div className="flex items-center gap-4">
-          <ThemeToggle />
-          <Button variant="outline" onClick={handleSignOut}>
-            Sign Out
-          </Button>
-        </div>
+        <h1 className="text-3xl font-bold">Zadania</h1>
       </div>
       
       <div className="grid gap-6">
         <section>
-          <h2 className="text-2xl font-semibold mb-4">Available Challenges</h2>
           <ChallengeList />
         </section>
       </div>

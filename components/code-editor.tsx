@@ -19,6 +19,13 @@ export function CodeEditor({ language, code, onChange, onSubmit, isSubmitting = 
     editorRef.current = editor
   }
 
+  const handleFormatCode = async () => {
+    if (editorRef.current) {
+      // Trigger the format document action
+      await editorRef.current.getAction('editor.action.formatDocument').run()
+    }
+  }
+
   return (
     <div className="flex flex-col h-full">
       <div className="flex-1 min-h-[400px]">
@@ -40,6 +47,9 @@ export function CodeEditor({ language, code, onChange, onSubmit, isSubmitting = 
         />
       </div>
       <div className="mt-4 flex justify-end">
+        <Button onClick={handleFormatCode} className="mr-2">
+          Format Code
+        </Button>
         <Button onClick={onSubmit} disabled={isSubmitting}>
           {isSubmitting ? 'Submitting...' : 'Submit Solution'}
         </Button>
