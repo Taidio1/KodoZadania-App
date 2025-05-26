@@ -2,22 +2,25 @@
 
 ## Opis Aplikacji
 
-KodoZadania-App (Python Programming Practice) to interaktywna aplikacja webowa stworzona, aby pomagać użytkownikom w nauce i doskonaleniu umiejętności programowania w Pythonie poprzez praktyczne wyzwania kodowania. Aplikacja oferuje intuicyjny interfejs ze opisem problemu i wbudowanym edytorem kodu, umożliwiając pisanie i testowanie rozwiązań w czasie rzeczywistym oraz otrzymywanie natychmiastowej informacji zwrotnej.
+KodoZadania-App (Python Programming Practice) to interaktywna aplikacja webowa stworzona, aby pomagać użytkownikom w nauce i doskonaleniu umiejętności programowania w Pythonie poprzez praktyczne wyzwania kodowania oraz przeglądanie i uczenie się definicji pojęć programistycznych. Aplikacja oferuje intuicyjny interfejs z wbudowanym edytorem kodu i natychmiastową informacją zwrotną, a także sekcję dedykowaną nauce teorii.
 
 ## Kluczowe Cechy
 
-*   **Interaktywny Edytor Kodu:** Wbudowany edytor z podświetlaniem składni i sprawdzaniem błędów.
+*   **Interaktywny Edytor Kodu:** Wbudowany edytor z podświetlaniem składni i sprawdzaniem błędów, wspierający formatowanie kodu.
 *   **Biblioteka Wyzwań:** Kolekcja zadań programistycznych o różnym poziomie trudności.
 *   **Natychmiastowa Informacja Zwrotna:** Szybka weryfikacja i feedback dla przesłanych rozwiązań.
+*   **Sekcja Definicji:** Baza pojęć programistycznych z możliwością oznaczania jako przeczytane.
+*   **Strona Profilu:** Statystyki postępów użytkownika, w tym przeczytane definicje i ukończone zadania, przedstawione graficznie.
+*   **Pasek Nawigacyjny:** Łatwy dostęp do kluczowych sekcji aplikacji (Definicje, Zadania, Profil).
 
 ## Plany na Przyszły Rozwój
 
 Planowane ulepszenia i nowe funkcje obejmują:
 
-*   **Integracja z Supabase:** Wykorzystanie Supabase do zarządzania bazą danych, uwierzytelniania i funkcji w czasie rzeczywistym.
-*   **Uwierzytelnianie Użytkowników:** Wprowadzenie systemu logowania i rejestracji.
-*   **Rozbudowa Biblioteki Wyzwań:** Dodanie większej liczby zadań.
-*   **Śledzenie Postępów:** Monitorowanie osiągnięć użytkowników.
+*   **Integracja z Supabase:** Wykorzystanie Supabase do zarządzania bazą danych, uwierzytelniania i funkcji w czasie rzeczywistym (już częściowo zaimplementowane).
+*   **Uwierzytelnianie Użytkowników:** Wprowadzenie systemu logowania i rejestracji (już częściowo zaimplementowane).
+*   **Rozbudowa Biblioteki Wyzwań i Definicji:** Dodanie większej liczby zadań i pojęć.
+*   **Śledzenie Postępów:** Monitorowanie osiągnięć użytkowników (już częściowo zaimplementowane na stronie profilu).
 *   **Zaawansowane Wykonywanie Kodu:** Implementacja bezpiecznego środowiska do uruchamiania kodu Python.
 *   **Funkcje Społecznościowe:** Umożliwienie dzielenia się rozwiązaniami i dyskusji.
 
